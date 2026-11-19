@@ -1,0 +1,7 @@
+# Conservar bytes originales: los manifiestos usan SHA-256 de archivos exactos.
+* -text
+*.parquet binary
+*.joblib binary
+*.pdf binary
+*.png binary
+*.jpg binary

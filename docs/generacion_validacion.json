@@ -1,0 +1,112 @@
+{
+  "config": {
+    "version": "mc-eventos-v1",
+    "seed": 20261117,
+    "years": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "per_year": 2000,
+    "observation_end": "2025-12-31",
+    "horizon_days": 90,
+    "trajectory_days": 365,
+    "assumptions": {
+      "area_log_mean": 5.0,
+      "area_log_sd": 0.8,
+      "value_per_m2": [
+        95,
+        150,
+        230
+      ],
+      "value_log_sd": 0.45,
+      "academic_rate": 0.0012,
+      "fixed_charge": 12.0,
+      "frailty_sd": 0.95,
+      "weibull_shape": 1.25,
+      "arrival_scale_days": 58,
+      "max_opportunities": 10,
+      "full_payment_probability": 0.42,
+      "reversal_probability": 0.025,
+      "administrative_event_probability": 0.015,
+      "area_missing_probability": 0.035,
+      "channel_missing_probability": 0.02
+    },
+    "note": "Supuestos academicos; no representan tasas, estadisticas o reglas del Municipio de Cayambe."
+  },
+  "lote_ids": [
+    "e614c2aa-fa87-553b-940f-9fdd6a5278a4"
+  ],
+  "hashes": {
+    "obligaciones": "dc42896f380d67fd6beaa9900cbd3c1d112d20d2a817f4e681fda9c8cfcf327c",
+    "movimientos": "5beaad2eb05356778b27a96e0973845634fa6597c7a542ad621e8bb9b0542769",
+    "obt": "2b7d72b7735e63c83e8763ca131468bf0687c1ec24b100cd969de95064e69c55"
+  },
+  "fingerprint_version": "pset3-fingerprint-v1",
+  "reproducibility_verified": true,
+  "storage": "LOCAL_PARQUET",
+  "snowflake_status": "NOT_PUBLISHED_NO_CONFIGURATION",
+  "quality": {
+    "obligations": 12000,
+    "events": 18988,
+    "obt_rows": 12000,
+    "class_counts": {
+      "1": 6865,
+      "0": 5135
+    },
+    "cohorts": {
+      "2019": {
+        "size": 2000,
+        "mean": 0.5785
+      },
+      "2020": {
+        "size": 2000,
+        "mean": 0.5495
+      },
+      "2021": {
+        "size": 2000,
+        "mean": 0.549
+      },
+      "2022": {
+        "size": 2000,
+        "mean": 0.576
+      },
+      "2023": {
+        "size": 2000,
+        "mean": 0.578
+      },
+      "2024": {
+        "size": 2000,
+        "mean": 0.6015
+      }
+    },
+    "missing": {
+      "LOTE_ID": 0,
+      "OBLIGACION_ID": 0,
+      "ANIO_FISCAL": 0,
+      "FECHA_EMISION_DECLARADA": 0,
+      "TOTAL_CENT": 0,
+      "IMPORTE_PRINCIPAL": 0,
+      "TOTAL_OBLIGACION_DECLARADO": 0,
+      "AVALUO_SIMULADO": 0,
+      "AREA_M2": 438,
+      "ZONA_SIMULADA": 0,
+      "USO_PREDIO": 0,
+      "CANAL_NOTIFICACION": 231,
+      "PLAZO_DIAS_SIMULADO": 0,
+      "DATA_CLASSIFICATION": 0,
+      "GENERATOR_VERSION": 0
+    },
+    "event_types": {
+      "PAGO": 18349,
+      "REVERSO": 457,
+      "ADMINISTRATIVO": 182
+    },
+    "obligations_without_events": 2696,
+    "target_from_events": true,
+    "integrity_passed": true
+  }
+}

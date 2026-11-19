@@ -1,0 +1,103 @@
+{
+  "identity": "f0bfa3d78673d26729138a0848fdfb3cb59f21999737077058db08610b287b52",
+  "registry": "pset3-predial-urbano-modelo",
+  "selection_metric": "development CV ROC-AUC; sd tie-break only",
+  "classification_policy": "OOF-only minimize FP+3*FN; thresholds fixed before holdout",
+  "cost_units": "academic relative units, not municipal money",
+  "cost_ratios": [
+    1,
+    2,
+    3,
+    5,
+    10
+  ],
+  "roles": {
+    "champion": {
+      "candidate": "logistica",
+      "default_auc": 0.5704640008296623,
+      "default_sd": 0.0022607293471367,
+      "tuned_auc": 0.570509366805021,
+      "tuned_sd": 0.0021992940850053266,
+      "delta": 4.5365975358646615e-05,
+      "improvement_conclusive": false,
+      "run_id": "8ab70273357640a4b2a8e5719a448704",
+      "config_key": "fc587fa83b160ae4d256bbcf646bd76d75d72f6fe6f40292ac0d20b39270d1ff",
+      "parameters": {
+        "model__C": 100.0,
+        "model__class_weight": null
+      },
+      "gap_roc_auc_mean": 0.004523513476132483,
+      "threshold": 0.35999999999999993,
+      "cost_sensitivity": {
+        "1": {
+          "threshold": 0.5199999999999999,
+          "development_oof_cost": 0.42885662431941923
+        },
+        "2": {
+          "threshold": 0.35999999999999993,
+          "development_oof_cost": 0.435934664246824
+        },
+        "3": {
+          "threshold": 0.35999999999999993,
+          "development_oof_cost": 0.435934664246824
+        },
+        "5": {
+          "threshold": 0.35999999999999993,
+          "development_oof_cost": 0.435934664246824
+        },
+        "10": {
+          "threshold": 0.35999999999999993,
+          "development_oof_cost": 0.435934664246824
+        }
+      },
+      "oof_rows": 5510
+    },
+    "challenger": {
+      "candidate": "mlp",
+      "default_auc": 0.5680701010342123,
+      "default_sd": 0.00767116397532,
+      "tuned_auc": 0.5692342050576187,
+      "tuned_sd": 0.005586152020675141,
+      "delta": 0.001164104023406387,
+      "improvement_conclusive": false,
+      "run_id": "1c32b608c7024455bbe68074121cf915",
+      "config_key": "7e0afc596024e1fc2275f11dcda4012aed302ab4ac753fd3b98ee144b21f89ac",
+      "parameters": {
+        "model__alpha": 1.0,
+        "model__hidden_layer_sizes": [
+          32,
+          16
+        ],
+        "model__learning_rate_init": 0.0005
+      },
+      "gap_roc_auc_mean": 0.020474564473205243,
+      "threshold": 0.37999999999999995,
+      "cost_sensitivity": {
+        "1": {
+          "threshold": 0.4799999999999999,
+          "development_oof_cost": 0.4281306715063521
+        },
+        "2": {
+          "threshold": 0.37999999999999995,
+          "development_oof_cost": 0.435934664246824
+        },
+        "3": {
+          "threshold": 0.37999999999999995,
+          "development_oof_cost": 0.435934664246824
+        },
+        "5": {
+          "threshold": 0.37999999999999995,
+          "development_oof_cost": 0.435934664246824
+        },
+        "10": {
+          "threshold": 0.37999999999999995,
+          "development_oof_cost": 0.435934664246824
+        }
+      },
+      "oof_rows": 5510
+    }
+  },
+  "holdout_evaluated_at_freeze": false,
+  "population_hash": "2b7d72b7735e63c83e8763ca131468bf0687c1ec24b100cd969de95064e69c55",
+  "inference_timing_policy": "single batch 2000 rows; wall time; no threshold or model selection using holdout"
+}

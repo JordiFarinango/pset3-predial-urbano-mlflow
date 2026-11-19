@@ -1,0 +1,199 @@
+{
+  "identity": "f0bfa3d78673d26729138a0848fdfb3cb59f21999737077058db08610b287b52",
+  "registry": "pset3-predial-urbano-modelo",
+  "roles": {
+    "champion": {
+      "candidate": "logistica",
+      "threshold": 0.35999999999999993,
+      "cv_auc_mean": 0.570509366805021,
+      "cv_auc_sd": 0.0021992940850053266,
+      "cv_gap_auc": 0.004523513476132483,
+      "metrics": {
+        "roc_auc": 0.5459667435343052,
+        "average_precision": 0.6382462194735529,
+        "balanced_accuracy": 0.5,
+        "f1": 0.7511707773961911,
+        "accuracy": 0.6015,
+        "cost_per_obligation": 0.3985,
+        "tn": 0,
+        "fp": 797,
+        "fn": 0,
+        "tp": 1203,
+        "precision": 0.6015,
+        "recall": 1.0,
+        "flagged_fraction": 1.0,
+        "fit_seconds": 0.04579879995435476,
+        "inference_seconds": 0.015891099930740893,
+        "batch_rows": 2000,
+        "inference_ms_per_row": 0.007945549965370446
+      },
+      "sensitivity": {
+        "1": {
+          "cost_per_obligation": 0.4345,
+          "tn": 250,
+          "fp": 547,
+          "fn": 322,
+          "tp": 881,
+          "precision": 0.6169467787114846,
+          "recall": 0.7323358270989194,
+          "flagged_fraction": 0.714,
+          "threshold": 0.5199999999999999,
+          "development_oof_cost": 0.42885662431941923
+        },
+        "2": {
+          "cost_per_obligation": 0.3985,
+          "tn": 0,
+          "fp": 797,
+          "fn": 0,
+          "tp": 1203,
+          "precision": 0.6015,
+          "recall": 1.0,
+          "flagged_fraction": 1.0,
+          "threshold": 0.35999999999999993,
+          "development_oof_cost": 0.435934664246824
+        },
+        "3": {
+          "cost_per_obligation": 0.3985,
+          "tn": 0,
+          "fp": 797,
+          "fn": 0,
+          "tp": 1203,
+          "precision": 0.6015,
+          "recall": 1.0,
+          "flagged_fraction": 1.0,
+          "threshold": 0.35999999999999993,
+          "development_oof_cost": 0.435934664246824
+        },
+        "5": {
+          "cost_per_obligation": 0.3985,
+          "tn": 0,
+          "fp": 797,
+          "fn": 0,
+          "tp": 1203,
+          "precision": 0.6015,
+          "recall": 1.0,
+          "flagged_fraction": 1.0,
+          "threshold": 0.35999999999999993,
+          "development_oof_cost": 0.435934664246824
+        },
+        "10": {
+          "cost_per_obligation": 0.3985,
+          "tn": 0,
+          "fp": 797,
+          "fn": 0,
+          "tp": 1203,
+          "precision": 0.6015,
+          "recall": 1.0,
+          "flagged_fraction": 1.0,
+          "threshold": 0.35999999999999993,
+          "development_oof_cost": 0.435934664246824
+        }
+      },
+      "run_id": "04f5fbb56cbd4e9d82d20fb5a4e10bc2",
+      "model_uri": "models:/m-b15ebd938941476c910ad815659e62c4",
+      "version": "1"
+    },
+    "challenger": {
+      "candidate": "mlp",
+      "threshold": 0.37999999999999995,
+      "cv_auc_mean": 0.5692342050576187,
+      "cv_auc_sd": 0.005586152020675141,
+      "cv_gap_auc": 0.020474564473205243,
+      "metrics": {
+        "roc_auc": 0.5485606352166426,
+        "average_precision": 0.6436049228603755,
+        "balanced_accuracy": 0.5,
+        "f1": 0.7511707773961911,
+        "accuracy": 0.6015,
+        "cost_per_obligation": 0.3985,
+        "tn": 0,
+        "fp": 797,
+        "fn": 0,
+        "tp": 1203,
+        "precision": 0.6015,
+        "recall": 1.0,
+        "flagged_fraction": 1.0,
+        "fit_seconds": 0.6747966998955235,
+        "inference_seconds": 0.013248199946247041,
+        "batch_rows": 2000,
+        "inference_ms_per_row": 0.006624099973123521
+      },
+      "sensitivity": {
+        "1": {
+          "cost_per_obligation": 0.403,
+          "tn": 60,
+          "fp": 737,
+          "fn": 69,
+          "tp": 1134,
+          "precision": 0.6060929983965794,
+          "recall": 0.942643391521197,
+          "flagged_fraction": 0.9355,
+          "threshold": 0.4799999999999999,
+          "development_oof_cost": 0.4281306715063521
+        },
+        "2": {
+          "cost_per_obligation": 0.3985,
+          "tn": 0,
+          "fp": 797,
+          "fn": 0,
+          "tp": 1203,
+          "precision": 0.6015,
+          "recall": 1.0,
+          "flagged_fraction": 1.0,
+          "threshold": 0.37999999999999995,
+          "development_oof_cost": 0.435934664246824
+        },
+        "3": {
+          "cost_per_obligation": 0.3985,
+          "tn": 0,
+          "fp": 797,
+          "fn": 0,
+          "tp": 1203,
+          "precision": 0.6015,
+          "recall": 1.0,
+          "flagged_fraction": 1.0,
+          "threshold": 0.37999999999999995,
+          "development_oof_cost": 0.435934664246824
+        },
+        "5": {
+          "cost_per_obligation": 0.3985,
+          "tn": 0,
+          "fp": 797,
+          "fn": 0,
+          "tp": 1203,
+          "precision": 0.6015,
+          "recall": 1.0,
+          "flagged_fraction": 1.0,
+          "threshold": 0.37999999999999995,
+          "development_oof_cost": 0.435934664246824
+        },
+        "10": {
+          "cost_per_obligation": 0.3985,
+          "tn": 0,
+          "fp": 797,
+          "fn": 0,
+          "tp": 1203,
+          "precision": 0.6015,
+          "recall": 1.0,
+          "flagged_fraction": 1.0,
+          "threshold": 0.37999999999999995,
+          "development_oof_cost": 0.435934664246824
+        }
+      },
+      "run_id": "b9c485a40e7e4ea1832414b916163c82",
+      "model_uri": "models:/m-219d80cec42c49ea8785a7fe5ba75bcd",
+      "version": "2"
+    }
+  },
+  "population_hash": "2b7d72b7735e63c83e8763ca131468bf0687c1ec24b100cd969de95064e69c55",
+  "holdout_rows": 2000,
+  "holdout_protocol_evaluations": 1,
+  "selection_based_on_holdout": false,
+  "auc_difference_bootstrap_95": [
+    -0.009596475458739739,
+    0.003832104774705233
+  ],
+  "auc_difference_bootstrap_note": "Paired holdout bootstrap uncertainty only, no model/threshold reselection; 1000 resamples.",
+  "dummy_all_positive_cost": 0.3985,
+  "snowflake_status": "NOT_PUBLISHED_NO_CONFIGURATION"
+}

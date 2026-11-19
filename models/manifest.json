@@ -1,0 +1,28 @@
+{
+  "classification": "SYNTHETIC",
+  "registry": "pset3-predial-urbano-modelo",
+  "population_hash": "2b7d72b7735e63c83e8763ca131468bf0687c1ec24b100cd969de95064e69c55",
+  "export_purpose": "Portable frozen model artifacts, not new training. Original run IDs/aliases are provenance, not a tracking database backup.",
+  "roles": {
+    "champion": {
+      "file": "models/champion.joblib",
+      "sha256": "d5b4c31e0ff05400991d9b29e501a549f9a57f2235559a6cab13bf6ef4240e56",
+      "reference_predictions": "models/champion_holdout.parquet",
+      "development_oof": "models/champion_development_oof.parquet",
+      "source_run_id": "04f5fbb56cbd4e9d82d20fb5a4e10bc2",
+      "original_registry_version": "1",
+      "threshold": 0.35999999999999993,
+      "expected_roc_auc": 0.5459667435343052
+    },
+    "challenger": {
+      "file": "models/challenger.joblib",
+      "sha256": "b48f561872310d055b2248389e6278cf985f6131e94a510453e6065f99fde023",
+      "reference_predictions": "models/challenger_holdout.parquet",
+      "development_oof": "models/challenger_development_oof.parquet",
+      "source_run_id": "b9c485a40e7e4ea1832414b916163c82",
+      "original_registry_version": "2",
+      "threshold": 0.37999999999999995,
+      "expected_roc_auc": 0.5485606352166426
+    }
+  }
+}

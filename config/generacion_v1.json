@@ -1,0 +1,20 @@
+{
+  "version": "mc-eventos-v1",
+  "seed": 20261117,
+  "years": [2019, 2020, 2021, 2022, 2023, 2024],
+  "per_year": 2000,
+  "observation_end": "2025-12-31",
+  "horizon_days": 90,
+  "trajectory_days": 365,
+  "assumptions": {
+    "area_log_mean": 5.0, "area_log_sd": 0.8,
+    "value_per_m2": [95, 150, 230], "value_log_sd": 0.45,
+    "academic_rate": 0.0012, "fixed_charge": 12.0,
+    "frailty_sd": 0.95, "weibull_shape": 1.25,
+    "arrival_scale_days": 58, "max_opportunities": 10,
+    "full_payment_probability": 0.42, "reversal_probability": 0.025,
+    "administrative_event_probability": 0.015,
+    "area_missing_probability": 0.035, "channel_missing_probability": 0.02
+  },
+  "note": "Supuestos academicos; no representan tasas, estadisticas o reglas del Municipio de Cayambe."
+}

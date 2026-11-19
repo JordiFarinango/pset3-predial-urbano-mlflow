@@ -1,0 +1,82 @@
+{
+  "identity": "f0bfa3d78673d26729138a0848fdfb3cb59f21999737077058db08610b287b52",
+  "models": [
+    "logistica",
+    "mlp",
+    "random_forest"
+  ],
+  "primary_metric": "roc_auc",
+  "n_folds": 3,
+  "method": "exhaustive bounded grid (30 distinct configurations/model)",
+  "spaces": {
+    "logistica": {
+      "model__C": [
+        0.0001,
+        0.0003,
+        0.001,
+        0.003,
+        0.01,
+        0.03,
+        0.1,
+        0.3,
+        0.5,
+        1.0,
+        2.0,
+        3.0,
+        10.0,
+        30.0,
+        100.0
+      ],
+      "model__class_weight": [
+        null,
+        "balanced"
+      ]
+    },
+    "mlp": {
+      "model__alpha": [
+        0.0001,
+        0.001,
+        0.01,
+        0.1,
+        1.0
+      ],
+      "model__hidden_layer_sizes": [
+        [
+          16
+        ],
+        [
+          32,
+          16
+        ],
+        [
+          64
+        ]
+      ],
+      "model__learning_rate_init": [
+        0.0005,
+        0.001
+      ]
+    },
+    "random_forest": {
+      "model__max_depth": [
+        3,
+        5,
+        7,
+        10,
+        null
+      ],
+      "model__min_samples_leaf": [
+        10,
+        20,
+        40
+      ],
+      "model__max_features": [
+        "sqrt",
+        0.8
+      ]
+    }
+  },
+  "n_configurations": 90,
+  "seed": 20261117,
+  "holdout_used": false
+}

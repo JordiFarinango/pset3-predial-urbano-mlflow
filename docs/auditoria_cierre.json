@@ -1,0 +1,57 @@
+{
+  "observation_end": "2025-12-31 00:00:00+00:00",
+  "training_cutoff": "2024-01-01 00:00:00+00:00",
+  "population_hash": "2b7d72b7735e63c83e8763ca131468bf0687c1ec24b100cd969de95064e69c55",
+  "mature_at_observation_end": 12000,
+  "immature_at_observation_end": 0,
+  "explanation": "490 mature by observation end 2025-12-31 but unavailable at training cutoff 2024-01-01. Excluded from model development, not unlabelled in generated population.",
+  "sets": {
+    "population": {
+      "n": 12000,
+      "classes": {
+        "1": 6865,
+        "0": 5135
+      },
+      "latest_emission": "2024-12-30 00:00:00+00:00",
+      "latest_label_available": "2025-03-31 00:00:00+00:00"
+    },
+    "development": {
+      "n": 9510,
+      "classes": {
+        "1": 5364,
+        "0": 4146
+      },
+      "latest_emission": "2023-10-01 00:00:00+00:00",
+      "latest_label_available": "2023-12-31 00:00:00+00:00"
+    },
+    "holdout": {
+      "n": 2000,
+      "classes": {
+        "1": 1203,
+        "0": 797
+      },
+      "latest_emission": "2024-12-30 00:00:00+00:00",
+      "latest_label_available": "2025-03-31 00:00:00+00:00"
+    },
+    "excluded_at_training_cutoff": {
+      "n": 490,
+      "classes": {
+        "1": 298,
+        "0": 192
+      },
+      "latest_emission": "2023-12-31 00:00:00+00:00",
+      "latest_label_available": "2024-03-31 00:00:00+00:00"
+    },
+    "eligible_development_plus_holdout": {
+      "n": 11510,
+      "classes": {
+        "1": 6567,
+        "0": 4943
+      },
+      "definition": "9.510 desarrollo elegible al corte + 2.000 holdout maduro al cierre final"
+    }
+  },
+  "dataset_changed": false,
+  "folds_changed": false,
+  "leakage_audit": "Features deterministic from issue columns; FeatureGuard whitelist; preprocessing fit inside fold pipeline; prior runs only scored development CV, no holdout scorer call."
+}

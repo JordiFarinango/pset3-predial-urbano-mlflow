@@ -1,0 +1,52 @@
+.env
+.env.*
+!.env.example
+.venv/
+.validation-deps/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+/data/*
+!/data/synthetic_v1/
+/data/synthetic_v1/*
+!/data/synthetic_v1/obligaciones.parquet
+!/data/synthetic_v1/movimientos.parquet
+!/data/synthetic_v1/obt.parquet
+!/data/synthetic_v1/manifest.json
+!/data/synthetic_v1/partitions.json
+artifacts/
+mlruns/
+mlflow.db*
+*.p8
+*.pem
+*.key
+*.log
+# Las evidencias agregadas de docs se revisan antes de compartirlas.
+
+/tmp/
+/entrega/
+/MANIFEST_SHA256.json
+!/MANIFEST_SHA256.json
+.snowflake/
+.snowsql/
+connections.toml
+*.zip
+
+# Publicacion: permitir solo los snapshots sinteticos explicitos anteriores.
+/publicacion/
+*.pfx
+*.p12
+id_rsa*
+id_ed25519*
+credentials*
+.envrc
+
+# Archivos de preparacion locales, fuera de la entrega publica.
+/._revision_privada/
+
+# Versiones retiradas: el unico PDF autorizado esta en el manifiesto.
+/docs/PSet3_memo_estilo_PSet2_Farinango_Andrango.pdf
+/docs/mlflow_comparacion.jpg
+/docs/mlflow_registry.jpg
+/docs/mlflow_comparacion_procedencia.json

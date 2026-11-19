@@ -1,0 +1,20 @@
+{
+  "mode": "READ_ONLY_EXPORT_OF_ORIGINAL_RUN_METADATA",
+  "source_tracking_uri": "http://127.0.0.1:5001",
+  "experiment_name": "pset3_mc_eventos_v1",
+  "experiment_id": "2",
+  "runs": 396,
+  "jsonl_sha256": "ad13b7548c6c22784dbea3bcce7b997a184f1b77856b1f0c292a092ebeb84f17",
+  "original_csv_sha256": "d167f6c7d579d5bbab86724a2008567ca2f087c97c313d7e8260d852eb520c67",
+  "code_versions_as_recorded": [
+    "sha256:679356ec2be34e7b59360d894dda196a066a4bef1a351664b33783501acea6e5",
+    "sha256:72f1728373264c78c2b543e509388017cb69adf25e696ef1c44527d670b174fc",
+    "sha256:7c4f24ac6d617e381169635da9f1a7c6c3f342c8d25636e98fdff2d6bd704ae4",
+    "sha256:a10ef2c8a4e7c7bb7363035fba97be9072a02e80c8c13d109f5a13b7ffc02514"
+  ],
+  "sensitive_params_excluded": 0,
+  "not_a_backend_backup": true,
+  "not_recreated_runs": true,
+  "artifacts_not_included_here": true,
+  "notes": "Original server, IDs, statuses, times and metrics retained. Only scientific params/tags exported; no user profiles or credentials. CSV remains untouched."
+}

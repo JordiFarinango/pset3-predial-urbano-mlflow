@@ -1,0 +1,87 @@
+{
+  "contract_version": "pset3-mc-obt-v1",
+  "columns": {
+    "LOTE_ID": {
+      "data_type": "TEXT"
+    },
+    "OBLIGACION_ID": {
+      "data_type": "TEXT"
+    },
+    "ANIO_FISCAL": {
+      "data_type": "NUMBER",
+      "numeric_precision": 38,
+      "numeric_scale": 0
+    },
+    "FECHA_EMISION_DECLARADA": {
+      "data_type": "TIMESTAMP_TZ"
+    },
+    "TOTAL_CENT": {
+      "data_type": "NUMBER",
+      "numeric_precision": 38,
+      "numeric_scale": 0
+    },
+    "IMPORTE_PRINCIPAL": {
+      "data_type": "NUMBER",
+      "numeric_precision": 16,
+      "numeric_scale": 2
+    },
+    "TOTAL_OBLIGACION_DECLARADO": {
+      "data_type": "NUMBER",
+      "numeric_precision": 16,
+      "numeric_scale": 2
+    },
+    "AVALUO_SIMULADO": {
+      "data_type": "NUMBER",
+      "numeric_precision": 16,
+      "numeric_scale": 2
+    },
+    "AREA_M2": {
+      "data_type": "NUMBER",
+      "numeric_precision": 16,
+      "numeric_scale": 2
+    },
+    "ZONA_SIMULADA": {
+      "data_type": "TEXT"
+    },
+    "USO_PREDIO": {
+      "data_type": "TEXT"
+    },
+    "CANAL_NOTIFICACION": {
+      "data_type": "TEXT"
+    },
+    "PLAZO_DIAS_SIMULADO": {
+      "data_type": "NUMBER",
+      "numeric_precision": 38,
+      "numeric_scale": 0
+    },
+    "DATA_CLASSIFICATION": {
+      "data_type": "TEXT"
+    },
+    "GENERATOR_VERSION": {
+      "data_type": "TEXT"
+    },
+    "PAGADO_90_CENT": {
+      "data_type": "NUMBER",
+      "numeric_precision": 38,
+      "numeric_scale": 0
+    },
+    "SALDO_90_CENT": {
+      "data_type": "NUMBER",
+      "numeric_precision": 38,
+      "numeric_scale": 0
+    },
+    "LABEL_AVAILABLE_AT": {
+      "data_type": "TIMESTAMP_TZ"
+    },
+    "TARGET_NO_PAGADA_90D": {
+      "data_type": "NUMBER",
+      "numeric_precision": 38,
+      "numeric_scale": 0
+    },
+    "N_MOVIMIENTOS": {
+      "data_type": "NUMBER",
+      "numeric_precision": 38,
+      "numeric_scale": 0
+    }
+  }
+}

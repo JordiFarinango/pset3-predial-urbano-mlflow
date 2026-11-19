@@ -1,0 +1,17 @@
+{
+  "approved": false,
+  "dataset_version": null,
+  "code_version": "unversioned",
+  "target": null,
+  "target_rule_version": null,
+  "lote_ids": [],
+  "numeric_features": [],
+  "categorical_features": [],
+  "approved_at_prediction": [],
+  "excluded_columns": [],
+  "split": null,
+  "primary_metric": null,
+  "business_metric": null,
+  "random_state": 42,
+  "note": "Plantilla inactiva: decidir dataset, etiqueta, features y evaluacion antes de aprobar."
+}

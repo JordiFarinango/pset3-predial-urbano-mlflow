@@ -1,0 +1,32 @@
+{
+  "features": [
+    "LOG_IMPORTE_EMISION",
+    "LOG_AREA_M2",
+    "PLAZO_DIAS_SIMULADO",
+    "MES_EMISION_SIN",
+    "MES_EMISION_COS",
+    "ZONA_SIMULADA",
+    "USO_PREDIO",
+    "CANAL_NOTIFICACION"
+  ],
+  "train_rows": 9510,
+  "holdout_rows": 2000,
+  "embargo_rows": 490,
+  "folds": [
+    {
+      "train": 3513,
+      "validation": 2000
+    },
+    {
+      "train": 5487,
+      "validation": 2000
+    },
+    {
+      "train": 7514,
+      "validation": 1510
+    }
+  ],
+  "holdout_evaluated": false,
+  "cutoff": "2024-01-01",
+  "final_observation_end": "2025-12-31"
+}

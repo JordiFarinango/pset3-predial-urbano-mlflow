@@ -1,0 +1,29 @@
+{
+  "development_rows": 9510,
+  "target_counts": {
+    "0": 4146,
+    "1": 5364
+  },
+  "positive_rate": 0.5640378548895899,
+  "spearman_feature_target": {
+    "TOTAL_OBLIGACION_DECLARADO": 0.006145107544449678,
+    "AVALUO_SIMULADO": 0.006145648026840678,
+    "AREA_M2": 0.008504998618667166,
+    "PLAZO_DIAS_SIMULADO": -0.0001307564750549565
+  },
+  "findings": [
+    {
+      "evidence": "Asimetria del importe: 5.294; atipicos IQR: 682.",
+      "consequence": "Evaluar log1p(importe) como feature de emision; conservar cola sin eliminar extremos por target."
+    },
+    {
+      "evidence": "Area ausente en 367 filas de desarrollo; canal ausente en 190.",
+      "consequence": "Imputar exclusivamente dentro de cada fold y admitir categoria faltante; no imputar globalmente."
+    },
+    {
+      "evidence": "Fraccion target=1: 0.5640; correlacion Spearman avaluo/importe: 1.0000.",
+      "consequence": "Usar ROC-AUC primaria y AP/F1/balanced accuracy secundarias; excluir avaluo redundante de esta primera comparacion."
+    }
+  ],
+  "holdout_used": false
+}

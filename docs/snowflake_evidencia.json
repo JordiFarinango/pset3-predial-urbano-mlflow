@@ -1,0 +1,365 @@
+{
+  "classification": "SYNTHETIC",
+  "status": "READBACK_VERIFIED",
+  "database": "PSET3_SINTETICO",
+  "schema": "EXPERIMENTOS",
+  "source_obt_fingerprint": "2b7d72b7735e63c83e8763ca131468bf0687c1ec24b100cd969de95064e69c55",
+  "experimental_training_source": "LOCAL_PARQUET",
+  "publication_changes_historical_training_lineage": false,
+  "verification_scope": "Extract of original execution receipts, reconciled offline against frozen local files; no new remote query.",
+  "source_receipts": {
+    "snowflake_publicacion.json": {
+      "sha256": "32b4454f81318709fd266353f4362bb23cded7de3c9ba538101c918d5e01eb0b",
+      "status": "PUBLISHED_AND_READBACK_VERIFIED"
+    },
+    "snowflake_relectura.json": {
+      "sha256": "0d73f917a1e007ae39fdd296a592172692b9b4592f94bd4841244f01c992585f",
+      "status": "READBACK_VERIFIED"
+    }
+  },
+  "objects": {
+    "obligaciones": {
+      "table": "\"PSET3_SINTETICO\".\"EXPERIMENTOS\".\"OBLIGACIONES_2B7D72B7735E\"",
+      "rows": 12000,
+      "columns": 15,
+      "fingerprint": "dc42896f380d67fd6beaa9900cbd3c1d112d20d2a817f4e681fda9c8cfcf327c",
+      "physical_schema": [
+        [
+          "LOTE_ID",
+          "TEXT",
+          null,
+          null
+        ],
+        [
+          "OBLIGACION_ID",
+          "TEXT",
+          null,
+          null
+        ],
+        [
+          "ANIO_FISCAL",
+          "NUMBER",
+          38,
+          0
+        ],
+        [
+          "FECHA_EMISION_DECLARADA",
+          "TIMESTAMP_TZ",
+          null,
+          null
+        ],
+        [
+          "TOTAL_CENT",
+          "NUMBER",
+          38,
+          0
+        ],
+        [
+          "IMPORTE_PRINCIPAL",
+          "NUMBER",
+          16,
+          2
+        ],
+        [
+          "TOTAL_OBLIGACION_DECLARADO",
+          "NUMBER",
+          16,
+          2
+        ],
+        [
+          "AVALUO_SIMULADO",
+          "NUMBER",
+          16,
+          2
+        ],
+        [
+          "AREA_M2",
+          "NUMBER",
+          16,
+          2
+        ],
+        [
+          "ZONA_SIMULADA",
+          "TEXT",
+          null,
+          null
+        ],
+        [
+          "USO_PREDIO",
+          "TEXT",
+          null,
+          null
+        ],
+        [
+          "CANAL_NOTIFICACION",
+          "TEXT",
+          null,
+          null
+        ],
+        [
+          "PLAZO_DIAS_SIMULADO",
+          "NUMBER",
+          38,
+          0
+        ],
+        [
+          "DATA_CLASSIFICATION",
+          "TEXT",
+          null,
+          null
+        ],
+        [
+          "GENERATOR_VERSION",
+          "TEXT",
+          null,
+          null
+        ]
+      ],
+      "reconciliation": {
+        "rows": 12000,
+        "columns": 15,
+        "keys_unique_and_equal": true,
+        "training_fingerprint": "dc42896f380d67fd6beaa9900cbd3c1d112d20d2a817f4e681fda9c8cfcf327c",
+        "logical_fingerprint": "1a7cafe66c5ba8517b967df8d7620f72cdb368956dce7ad0686d49bff1d888e7",
+        "logical_fingerprint_version": "pset3-logical-v1",
+        "null_counts_equal": true
+      },
+      "read_limit": 12001,
+      "query_ids": {
+        "snowflake_publicacion.json": "01c881f5-0209-e0bb-0013-16ae0004c8a6",
+        "snowflake_relectura.json": "01c881f7-0209-eb99-0013-16ae0005a0ca"
+      }
+    },
+    "movimientos": {
+      "table": "\"PSET3_SINTETICO\".\"EXPERIMENTOS\".\"MOVIMIENTOS_2B7D72B7735E\"",
+      "rows": 18988,
+      "columns": 6,
+      "fingerprint": "5beaad2eb05356778b27a96e0973845634fa6597c7a542ad621e8bb9b0542769",
+      "physical_schema": [
+        [
+          "LOTE_ID",
+          "TEXT",
+          null,
+          null
+        ],
+        [
+          "OBLIGACION_ID",
+          "TEXT",
+          null,
+          null
+        ],
+        [
+          "MOVIMIENTO_ID",
+          "TEXT",
+          null,
+          null
+        ],
+        [
+          "FECHA_EVENTO",
+          "TIMESTAMP_TZ",
+          null,
+          null
+        ],
+        [
+          "IMPORTE_CENT",
+          "NUMBER",
+          38,
+          0
+        ],
+        [
+          "TIPO_EVENTO",
+          "TEXT",
+          null,
+          null
+        ]
+      ],
+      "reconciliation": {
+        "rows": 18988,
+        "columns": 6,
+        "keys_unique_and_equal": true,
+        "training_fingerprint": "5beaad2eb05356778b27a96e0973845634fa6597c7a542ad621e8bb9b0542769",
+        "logical_fingerprint": "c814a2450509bc0a2a247a863a8ddaf8ea9eabfd5d6ca2ae1639260da442400c",
+        "logical_fingerprint_version": "pset3-logical-v1",
+        "null_counts_equal": true
+      },
+      "read_limit": 18989,
+      "query_ids": {
+        "snowflake_publicacion.json": "01c881f5-0209-edf4-0013-16ae0005612e",
+        "snowflake_relectura.json": "01c881f8-0209-ede7-0013-16ae000550d2"
+      }
+    },
+    "obt": {
+      "table": "\"PSET3_SINTETICO\".\"EXPERIMENTOS\".\"OBT_PREDIAL_2B7D72B7735E\"",
+      "rows": 12000,
+      "columns": 20,
+      "fingerprint": "2b7d72b7735e63c83e8763ca131468bf0687c1ec24b100cd969de95064e69c55",
+      "physical_schema": [
+        [
+          "LOTE_ID",
+          "TEXT",
+          null,
+          null
+        ],
+        [
+          "OBLIGACION_ID",
+          "TEXT",
+          null,
+          null
+        ],
+        [
+          "ANIO_FISCAL",
+          "NUMBER",
+          38,
+          0
+        ],
+        [
+          "FECHA_EMISION_DECLARADA",
+          "TIMESTAMP_TZ",
+          null,
+          null
+        ],
+        [
+          "TOTAL_CENT",
+          "NUMBER",
+          38,
+          0
+        ],
+        [
+          "IMPORTE_PRINCIPAL",
+          "NUMBER",
+          16,
+          2
+        ],
+        [
+          "TOTAL_OBLIGACION_DECLARADO",
+          "NUMBER",
+          16,
+          2
+        ],
+        [
+          "AVALUO_SIMULADO",
+          "NUMBER",
+          16,
+          2
+        ],
+        [
+          "AREA_M2",
+          "NUMBER",
+          16,
+          2
+        ],
+        [
+          "ZONA_SIMULADA",
+          "TEXT",
+          null,
+          null
+        ],
+        [
+          "USO_PREDIO",
+          "TEXT",
+          null,
+          null
+        ],
+        [
+          "CANAL_NOTIFICACION",
+          "TEXT",
+          null,
+          null
+        ],
+        [
+          "PLAZO_DIAS_SIMULADO",
+          "NUMBER",
+          38,
+          0
+        ],
+        [
+          "DATA_CLASSIFICATION",
+          "TEXT",
+          null,
+          null
+        ],
+        [
+          "GENERATOR_VERSION",
+          "TEXT",
+          null,
+          null
+        ],
+        [
+          "PAGADO_90_CENT",
+          "NUMBER",
+          38,
+          0
+        ],
+        [
+          "SALDO_90_CENT",
+          "NUMBER",
+          38,
+          0
+        ],
+        [
+          "LABEL_AVAILABLE_AT",
+          "TIMESTAMP_TZ",
+          null,
+          null
+        ],
+        [
+          "TARGET_NO_PAGADA_90D",
+          "NUMBER",
+          38,
+          0
+        ],
+        [
+          "N_MOVIMIENTOS",
+          "NUMBER",
+          38,
+          0
+        ]
+      ],
+      "reconciliation": {
+        "rows": 12000,
+        "columns": 20,
+        "keys_unique_and_equal": true,
+        "training_fingerprint": "2b7d72b7735e63c83e8763ca131468bf0687c1ec24b100cd969de95064e69c55",
+        "logical_fingerprint": "f22b844d70b327f07b2b62c6eaae80cd39962bc3db1b799c5631001f630fc3ae",
+        "logical_fingerprint_version": "pset3-logical-v1",
+        "null_counts_equal": true,
+        "labels_equal_by_id": true,
+        "classes": {
+          "1": 6865,
+          "0": 5135
+        },
+        "cohort_classes": {
+          "2019": {
+            "1": 1157,
+            "0": 843
+          },
+          "2020": {
+            "1": 1099,
+            "0": 901
+          },
+          "2021": {
+            "1": 1098,
+            "0": 902
+          },
+          "2022": {
+            "1": 1152,
+            "0": 848
+          },
+          "2023": {
+            "1": 1156,
+            "0": 844
+          },
+          "2024": {
+            "1": 1203,
+            "0": 797
+          }
+        }
+      },
+      "read_limit": 12001,
+      "query_ids": {
+        "snowflake_publicacion.json": "01c881f6-0209-eb99-0013-16ae0005a0b6",
+        "snowflake_relectura.json": "01c881f8-0209-eb99-0013-16ae0005a0d2"
+      }
+    }
+  }
+}

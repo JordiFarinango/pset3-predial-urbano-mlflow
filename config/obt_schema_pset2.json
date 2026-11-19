@@ -1,0 +1,378 @@
+{
+  "contract_version": "obt-schema-pset2-v1",
+  "description": "Contrato fisico copiado del PSet 2; no define target ni features.",
+  "source_contract_sha256": "3eb6d44a25f9416bb5215f11565813d9f656696b5ea31da4c7c11e7bfced02bc",
+  "columns": {
+    "OBLIGACION_ID": {
+      "data_type": "TEXT",
+      "character_maximum_length": 64
+    },
+    "ANIO_FISCAL": {
+      "data_type": "NUMBER",
+      "numeric_scale": 0
+    },
+    "IMPORTE_PRINCIPAL": {
+      "data_type": "NUMBER",
+      "numeric_precision": 16,
+      "numeric_scale": 2
+    },
+    "IMPORTE_SOLARES": {
+      "data_type": "NUMBER",
+      "numeric_precision": 16,
+      "numeric_scale": 2
+    },
+    "IMPORTE_MEDICINA": {
+      "data_type": "NUMBER",
+      "numeric_precision": 16,
+      "numeric_scale": 2
+    },
+    "IMPORTE_EDUCACION": {
+      "data_type": "NUMBER",
+      "numeric_precision": 16,
+      "numeric_scale": 2
+    },
+    "IMPORTE_MAGISTERIO": {
+      "data_type": "NUMBER",
+      "numeric_precision": 16,
+      "numeric_scale": 2
+    },
+    "IMPORTE_VIVIENDA": {
+      "data_type": "NUMBER",
+      "numeric_precision": 16,
+      "numeric_scale": 2
+    },
+    "IMPORTE_BOMBEROS": {
+      "data_type": "NUMBER",
+      "numeric_precision": 16,
+      "numeric_scale": 2
+    },
+    "IMPORTE_ESCOLARES": {
+      "data_type": "NUMBER",
+      "numeric_precision": 16,
+      "numeric_scale": 2
+    },
+    "IMPORTE_PROCESAMIENTO": {
+      "data_type": "NUMBER",
+      "numeric_precision": 16,
+      "numeric_scale": 2
+    },
+    "IMPORTE_BASURA": {
+      "data_type": "NUMBER",
+      "numeric_precision": 16,
+      "numeric_scale": 2
+    },
+    "IMPORTE_BORDILLO": {
+      "data_type": "NUMBER",
+      "numeric_precision": 16,
+      "numeric_scale": 2
+    },
+    "IMPORTE_ALCANTA": {
+      "data_type": "NUMBER",
+      "numeric_precision": 16,
+      "numeric_scale": 2
+    },
+    "IMPORTE_ADOQUI_NUEVO": {
+      "data_type": "NUMBER",
+      "numeric_precision": 16,
+      "numeric_scale": 2
+    },
+    "IMPORTE_ADO_GLOB_2011": {
+      "data_type": "NUMBER",
+      "numeric_precision": 16,
+      "numeric_scale": 2
+    },
+    "TOTAL_OBLIGACION_DECLARADO": {
+      "data_type": "NUMBER",
+      "numeric_precision": 16,
+      "numeric_scale": 2
+    },
+    "FECHA_EMISION_DECLARADA": {
+      "data_type": "DATE"
+    },
+    "FECHA_CREACION_DECLARADA": {
+      "data_type": "DATE"
+    },
+    "FECHA_MODIFICACION_DECLARADA": {
+      "data_type": "DATE"
+    },
+    "FECHA_PAGO_ACTUAL_DECLARADA": {
+      "data_type": "DATE"
+    },
+    "FECHA_ANULACION_DECLARADA": {
+      "data_type": "DATE"
+    },
+    "ESTADO_CODIGO": {
+      "data_type": "TEXT",
+      "character_maximum_length": 1
+    },
+    "CONDICION_CODIGO": {
+      "data_type": "TEXT",
+      "character_maximum_length": 1
+    },
+    "TIPO_DOCUMENTO_CODIGO": {
+      "data_type": "TEXT",
+      "character_maximum_length": 2
+    },
+    "LOTE_ID": {
+      "data_type": "TEXT",
+      "character_maximum_length": 36
+    },
+    "CAPTURADO_EN": {
+      "data_type": "TIMESTAMP_TZ",
+      "datetime_precision": 3
+    },
+    "ID_VERSION": {
+      "data_type": "TEXT",
+      "character_maximum_length": 16
+    },
+    "DQ_FECHA_EMISION_NULA": {
+      "data_type": "BOOLEAN"
+    },
+    "DQ_EMISION_PRE1901": {
+      "data_type": "BOOLEAN"
+    },
+    "DQ_CREACION_POSTERIOR_EMISION": {
+      "data_type": "BOOLEAN"
+    },
+    "DQ_TOTAL_NULO": {
+      "data_type": "BOOLEAN"
+    },
+    "DQ_TOTAL_NEGATIVO": {
+      "data_type": "BOOLEAN"
+    },
+    "DQ_PRINCIPAL_NEGATIVO": {
+      "data_type": "BOOLEAN"
+    },
+    "DQ_PAGO_POSTERIOR_CAPTURA": {
+      "data_type": "BOOLEAN"
+    },
+    "DQ_A_SIN_FECHA_ANULACION": {
+      "data_type": "BOOLEAN"
+    },
+    "DQ_F_CON_FECHA_ANULACION": {
+      "data_type": "BOOLEAN"
+    },
+    "CONTEXTO_KEY": {
+      "data_type": "TEXT",
+      "character_maximum_length": 64
+    },
+    "FECHA_EMISION_KEY": {
+      "data_type": "NUMBER",
+      "numeric_scale": 0
+    },
+    "FECHA_CREACION_KEY": {
+      "data_type": "NUMBER",
+      "numeric_scale": 0
+    },
+    "FECHA_MODIFICACION_KEY": {
+      "data_type": "NUMBER",
+      "numeric_scale": 0
+    },
+    "FECHA_PAGO_ACTUAL_KEY": {
+      "data_type": "NUMBER",
+      "numeric_scale": 0
+    },
+    "FECHA_ANULACION_KEY": {
+      "data_type": "NUMBER",
+      "numeric_scale": 0
+    },
+    "N_MOVIMIENTOS": {
+      "data_type": "NUMBER",
+      "numeric_scale": 0
+    },
+    "N_TOTALES_INFORMADOS": {
+      "data_type": "NUMBER",
+      "numeric_scale": 0
+    },
+    "N_DOCUMENTOS_AB": {
+      "data_type": "NUMBER",
+      "numeric_scale": 0
+    },
+    "N_DOCUMENTOS_FA": {
+      "data_type": "NUMBER",
+      "numeric_scale": 0
+    },
+    "N_ESTADO_F": {
+      "data_type": "NUMBER",
+      "numeric_scale": 0
+    },
+    "N_ESTADO_A": {
+      "data_type": "NUMBER",
+      "numeric_scale": 0
+    },
+    "SUMA_TOTAL_MOVIMIENTOS_DECLARADOS": {
+      "data_type": "NUMBER",
+      "numeric_precision": 38,
+      "numeric_scale": 2
+    },
+    "SUMA_PRINCIPAL_MOVIMIENTOS_DECLARADOS": {
+      "data_type": "NUMBER",
+      "numeric_precision": 38,
+      "numeric_scale": 2
+    },
+    "SUMA_RECARGO_DECLARADO": {
+      "data_type": "NUMBER",
+      "numeric_precision": 38,
+      "numeric_scale": 2
+    },
+    "SUMA_DESCUENTO_DECLARADO": {
+      "data_type": "NUMBER",
+      "numeric_precision": 38,
+      "numeric_scale": 2
+    },
+    "SUMA_INTERES_MORA_DECLARADO": {
+      "data_type": "NUMBER",
+      "numeric_precision": 38,
+      "numeric_scale": 2
+    },
+    "SUMA_COSTAS_PROCESALES_DECLARADAS": {
+      "data_type": "NUMBER",
+      "numeric_precision": 38,
+      "numeric_scale": 2
+    },
+    "FECHA_PRIMER_MOVIMIENTO_DECLARADA": {
+      "data_type": "DATE"
+    },
+    "FECHA_ULTIMO_MOVIMIENTO_DECLARADA": {
+      "data_type": "DATE"
+    },
+    "SUMA_IMPORTE_SOLARES_MOVIMIENTOS": {
+      "data_type": "NUMBER",
+      "numeric_precision": 38,
+      "numeric_scale": 2
+    },
+    "SUMA_IMPORTE_MEDICINA_MOVIMIENTOS": {
+      "data_type": "NUMBER",
+      "numeric_precision": 38,
+      "numeric_scale": 2
+    },
+    "SUMA_IMPORTE_EDUCACION_MOVIMIENTOS": {
+      "data_type": "NUMBER",
+      "numeric_precision": 38,
+      "numeric_scale": 2
+    },
+    "SUMA_IMPORTE_MAGISTERIO_MOVIMIENTOS": {
+      "data_type": "NUMBER",
+      "numeric_precision": 38,
+      "numeric_scale": 2
+    },
+    "SUMA_IMPORTE_VIVIENDA_MOVIMIENTOS": {
+      "data_type": "NUMBER",
+      "numeric_precision": 38,
+      "numeric_scale": 2
+    },
+    "SUMA_IMPORTE_BOMBEROS_MOVIMIENTOS": {
+      "data_type": "NUMBER",
+      "numeric_precision": 38,
+      "numeric_scale": 2
+    },
+    "SUMA_IMPORTE_ESCOLARES_MOVIMIENTOS": {
+      "data_type": "NUMBER",
+      "numeric_precision": 38,
+      "numeric_scale": 2
+    },
+    "SUMA_IMPORTE_PROCESAMIENTO_MOVIMIENTOS": {
+      "data_type": "NUMBER",
+      "numeric_precision": 38,
+      "numeric_scale": 2
+    },
+    "SUMA_IMPORTE_BASURA_MOVIMIENTOS": {
+      "data_type": "NUMBER",
+      "numeric_precision": 38,
+      "numeric_scale": 2
+    },
+    "SUMA_IMPORTE_BORDILLO_MOVIMIENTOS": {
+      "data_type": "NUMBER",
+      "numeric_precision": 38,
+      "numeric_scale": 2
+    },
+    "SUMA_IMPORTE_ALCANTA_MOVIMIENTOS": {
+      "data_type": "NUMBER",
+      "numeric_precision": 38,
+      "numeric_scale": 2
+    },
+    "SUMA_IMPORTE_ADOQUI_NUEVO_MOVIMIENTOS": {
+      "data_type": "NUMBER",
+      "numeric_precision": 38,
+      "numeric_scale": 2
+    },
+    "SUMA_IMPORTE_ADO_GLOB_2011_MOVIMIENTOS": {
+      "data_type": "NUMBER",
+      "numeric_precision": 38,
+      "numeric_scale": 2
+    },
+    "N_SALDOS_INFORMADOS": {
+      "data_type": "NUMBER",
+      "numeric_scale": 0
+    },
+    "N_CONTEXTOS_MOVIMIENTO": {
+      "data_type": "NUMBER",
+      "numeric_scale": 0
+    },
+    "N_MOVIMIENTOS_CON_ADVERTENCIAS": {
+      "data_type": "NUMBER",
+      "numeric_scale": 0
+    },
+    "TIENE_MOVIMIENTOS": {
+      "data_type": "BOOLEAN"
+    },
+    "TIENE_DOCUMENTOS_AB": {
+      "data_type": "BOOLEAN"
+    },
+    "TIENE_MOVIMIENTOS_ESTADO_A": {
+      "data_type": "BOOLEAN"
+    },
+    "TIENE_TOTALES_NULOS": {
+      "data_type": "BOOLEAN"
+    },
+    "OBLIGACION_CON_ADVERTENCIAS": {
+      "data_type": "BOOLEAN"
+    },
+    "DIAS_ENTRE_MOVIMIENTOS_DECLARADOS": {
+      "data_type": "NUMBER",
+      "numeric_scale": 0
+    },
+    "CONTEXTO_ORIGEN": {
+      "data_type": "TEXT",
+      "character_maximum_length": 10
+    },
+    "ANIO_EMISION": {
+      "data_type": "NUMBER",
+      "numeric_scale": 0
+    },
+    "MES_EMISION": {
+      "data_type": "NUMBER",
+      "numeric_scale": 0
+    },
+    "DIA_SEMANA_ISO_EMISION": {
+      "data_type": "NUMBER",
+      "numeric_scale": 0
+    },
+    "FECHA_DESCONOCIDA_EMISION": {
+      "data_type": "BOOLEAN"
+    },
+    "ANIO_PAGO_ACTUAL": {
+      "data_type": "NUMBER",
+      "numeric_scale": 0
+    },
+    "MES_PAGO_ACTUAL": {
+      "data_type": "NUMBER",
+      "numeric_scale": 0
+    },
+    "DIA_SEMANA_ISO_PAGO_ACTUAL": {
+      "data_type": "NUMBER",
+      "numeric_scale": 0
+    },
+    "FECHA_DESCONOCIDA_PAGO_ACTUAL": {
+      "data_type": "BOOLEAN"
+    },
+    "OBT_VERSION": {
+      "data_type": "TEXT",
+      "character_maximum_length": 16
+    },
+    "OBT_PROCESADO_EN": {
+      "data_type": "TIMESTAMP_TZ",
+      "datetime_precision": 3
+    }
+  }
+}

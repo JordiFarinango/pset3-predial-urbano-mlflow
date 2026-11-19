@@ -1,0 +1,72 @@
+{
+  "approved": true,
+  "approval_scope": "User-authorized first synthetic experimental version; academic assumptions",
+  "dataset_version": "mc-eventos-v1",
+  "code_version": "sha256:computed-at-run",
+  "target": "TARGET_NO_PAGADA_90D",
+  "target_rule_version": "net-cents-day90-inclusive-v1",
+  "lote_ids": [
+    "e614c2aa-fa87-553b-940f-9fdd6a5278a4"
+  ],
+  "numeric_features": [
+    "LOG_IMPORTE_EMISION",
+    "LOG_AREA_M2",
+    "PLAZO_DIAS_SIMULADO",
+    "MES_EMISION_SIN",
+    "MES_EMISION_COS"
+  ],
+  "categorical_features": [
+    "ZONA_SIMULADA",
+    "USO_PREDIO",
+    "CANAL_NOTIFICACION"
+  ],
+  "approved_at_prediction": [
+    "LOG_IMPORTE_EMISION",
+    "LOG_AREA_M2",
+    "PLAZO_DIAS_SIMULADO",
+    "MES_EMISION_SIN",
+    "MES_EMISION_COS",
+    "ZONA_SIMULADA",
+    "USO_PREDIO",
+    "CANAL_NOTIFICACION"
+  ],
+  "excluded_columns": [
+    "LOTE_ID",
+    "OBLIGACION_ID",
+    "ANIO_FISCAL",
+    "FECHA_EMISION_DECLARADA",
+    "TOTAL_CENT",
+    "IMPORTE_PRINCIPAL",
+    "TOTAL_OBLIGACION_DECLARADO",
+    "AVALUO_SIMULADO",
+    "AREA_M2",
+    "DATA_CLASSIFICATION",
+    "GENERATOR_VERSION",
+    "PAGADO_90_CENT",
+    "SALDO_90_CENT",
+    "LABEL_AVAILABLE_AT",
+    "N_MOVIMIENTOS"
+  ],
+  "split": {
+    "strategy": "temporal",
+    "cutoff": "2024-01-01",
+    "windows": [
+      [
+        "2021-01-01",
+        "2022-01-01"
+      ],
+      [
+        "2022-01-01",
+        "2023-01-01"
+      ],
+      [
+        "2023-01-01",
+        "2024-01-01"
+      ]
+    ],
+    "label_maturation_required": true
+  },
+  "primary_metric": "roc_auc",
+  "business_metric": "none_academic_simulation",
+  "random_state": 20261117
+}

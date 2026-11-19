@@ -1,0 +1,9 @@
+{
+  "registry_uri": "models:/pset3-predial-urbano-modelo@champion",
+  "auc": 0.5459667435343052,
+  "expected_auc": 0.5459667435343052,
+  "exact_auc_match": true,
+  "exact_predictions_match": true,
+  "refit": false,
+  "threshold_optimized_again": false
+}

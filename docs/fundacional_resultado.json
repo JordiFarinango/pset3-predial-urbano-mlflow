@@ -1,0 +1,42 @@
+{
+  "status": "BLOCKED_RESOURCE_BUDGET",
+  "run_id": "b7c4e87d0d374625a2e1ab111f0821f1",
+  "installed": "TabPFN10.2.0 Torch2.15.0",
+  "weights_downloaded": "public V2 classifier, 29009539 bytes",
+  "device": "cpu, 2 threads, n_estimators=1, cache and memory-saving enabled",
+  "hardware": "GTX1650 4GiB; 19GiB RAM; torch CPU build",
+  "observed_available_ram_gib_before_abort": 1.03,
+  "elapsed_seconds_before_abort": 288.53892114257815,
+  "completed_folds": 1,
+  "cv_metrics_available": false,
+  "holdout_used": false,
+  "reason": "Resource budget reached while progressing through CPU folds: available RAM fell to about 1 GiB. Dedicated worker stopped. Partial fold results are retained, but no complete comparable 3-fold mean exists.",
+  "license": "V2 weights Prior Labs Apache2+attribution; package Apache2. No login or license gate bypass.",
+  "legacy_version_incompatibility": "tabpfn2.2.1 requires sklearn<1.7 and pandas<3; existing versions preserved.",
+  "partial_folds": [
+    {
+      "run_id": "a55d5804e5224f6eb43ba4ec52613ecd",
+      "metrics": {
+        "fold": 0.0,
+        "train_rows": 3513.0,
+        "validation_rows": 2000.0,
+        "fit_seconds": 37.21689419995528,
+        "train_roc_auc": 0.5918569433798035,
+        "validation_roc_auc": 0.5674851271612567,
+        "gap_roc_auc": 0.024371816218546893,
+        "train_average_precision": 0.6433517943446339,
+        "validation_average_precision": 0.6100301557852462,
+        "gap_average_precision": 0.033321638559387634,
+        "train_balanced_accuracy": 0.5256605667673382,
+        "validation_balanced_accuracy": 0.5151818060654526,
+        "gap_balanced_accuracy": 0.010478760701885581,
+        "train_f1": 0.7147779479326187,
+        "validation_f1": 0.6973415132924335,
+        "gap_f1": 0.017436434640185183,
+        "train_accuracy": 0.5758610873896954,
+        "validation_accuracy": 0.556,
+        "gap_accuracy": 0.019861087389695387
+      }
+    }
+  ]
+}

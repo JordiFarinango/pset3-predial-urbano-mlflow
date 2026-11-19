@@ -1,0 +1,22 @@
+{
+  "univariate_orientation_free_auc": {
+    "LOG_IMPORTE_EMISION": 0.5035773409264314,
+    "LOG_AREA_M2": 0.5050066000741755,
+    "PLAZO_DIAS_SIMULADO": 0.5000694945812663,
+    "MES_EMISION_SIN": 0.5560884447710757,
+    "MES_EMISION_COS": 0.5074580208662708
+  },
+  "permuted_train_label_auc": [
+    0.479664699776655,
+    0.4713040077961216,
+    0.48483239664221256
+  ],
+  "negative_control_auc_mean": 0.47860036807166306,
+  "holdout_used": false,
+  "excluded_future_columns": [
+    "PAGADO_90_CENT",
+    "SALDO_90_CENT",
+    "N_MOVIMIENTOS",
+    "LABEL_AVAILABLE_AT"
+  ]
+}

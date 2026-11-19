@@ -1,0 +1,10 @@
+{
+  "champion": {
+    "trainable_parameters": 16,
+    "explanation": "Linear standardized feature coefficients"
+  },
+  "challenger": {
+    "trainable_parameters": 1057,
+    "explanation": "Nonlinear hidden layers; less directly interpretable"
+  }
+}
