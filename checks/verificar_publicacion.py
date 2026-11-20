@@ -65,6 +65,8 @@ def audit(staged=False):
     if len(frames['obligaciones'])!=12000 or len(frames['movimientos'])!=18988 or len(frames['obt'])!=12000:raise ValueError('Conteos distintos.')
     from checks.verificar_snowflake import verify
     snowflake_evidence=verify(frames)
+    from checks.verificar_defaults_snowflake import verify as verify_defaults
+    defaults_evidence=verify_defaults(ROOT)
     staged_count=None
     if staged:
         def git(*args):return subprocess.check_output(['git',*args],cwd=ROOT)
@@ -74,6 +76,6 @@ def audit(staged=False):
             if digest(git('show',':'+rel))!=digest((ROOT/rel).read_bytes()):raise ValueError('Index distinto de bytes auditados: '+rel)
         staged_count=len(paths)
     extras=actual-allowed
-    return {'status':'PASS','files_verified':len(m['files']),'original_v2_immutable_files':len(immutable),'synthetic_obligations':12000,'synthetic_events':18988,'synthetic_obt_rows':12000,'seed':generation['config']['seed'],'population_hash':generation['hashes']['obt'],'secret_marker_scan':'PASS','extra_local_files_outside_manifest':len(extras),'staged_files_verified':staged_count,'academic_pdf':pdf_info,'snowflake_evidence':snowflake_evidence,'no_database_connections':True,'no_training':True,'note':'Procedencia sintetica sustentada en generador, contratos, clasificacion, relaciones y hashes de v2; escaneo de secretos no garantiza ausencia de toda clase de secreto.'}
+    return {'status':'PASS','files_verified':len(m['files']),'original_v2_immutable_files':len(immutable),'synthetic_obligations':12000,'synthetic_events':18988,'synthetic_obt_rows':12000,'seed':generation['config']['seed'],'population_hash':generation['hashes']['obt'],'secret_marker_scan':'PASS','extra_local_files_outside_manifest':len(extras),'staged_files_verified':staged_count,'academic_pdf':pdf_info,'snowflake_evidence':snowflake_evidence,'new_defaults_evidence':defaults_evidence,'no_database_connections':True,'no_training':True,'note':'Procedencia sintetica sustentada en generador, contratos, clasificacion, relaciones y hashes de v2; escaneo de secretos no garantiza ausencia de toda clase de secreto.'}
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--staged',action='store_true');a=p.parse_args();print(json.dumps(audit(a.staged),indent=2))

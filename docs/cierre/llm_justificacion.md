@@ -47,3 +47,12 @@ completa limitada por recursos, no falta de autorizacion para datos ficticios.
 La justificacion responde a la opcion de discutir adecuacion permitida por el
 enunciado. No prueba que un LLM no pueda funcionar ni su inferioridad empirica;
 la frailty limita tambien modelos tabulares. No se ejecuto prompting.
+
+## Alcance contrastado con el enunciado oficial
+
+La pagina4 permite explicar la exclusion si el problema no se puede plantear
+mediante prompting. La plantilla anterior SI formula un caso tabular: falta de
+texto libre o costo no prueban imposibilidad. Esta discusion no acredita por si
+sola esa condicion literal; falta aceptacion docente o un experimento prompting
+comparable autorizado. No se presenta como requisito cerrado ni como prueba de
+inferioridad de LLM. Este requisito permanece pendiente.

@@ -61,3 +61,17 @@ entonces; el presente recibo documenta la publicacion posterior.
 La configuracion en otra cuenta y su ejecucion no se han demostrado. Los recibos
 locales generados por esas ejecuciones no deben reemplazar la evidencia original
 sin una revision y trazabilidad nuevas. No se requiere SQL Server o VPN municipal.
+
+## Estudio complementario posterior: lectura y entrenamiento reales
+
+El 20 de noviembre de2026 se completo una comparacion separada con defaults:
+[resultados](defaults_snowflake_resultados.csv), [consultas y huellas](defaults_snowflake_evidencia.json).
+Tres lecturas SELECT reales conciliaron la OBT12.000x20, esquema, claves y etiquetas
+con el snapshot congelado. El DataFrame de Snowflake alimentó solo el desarrollo
+original y los tres folds; no se evaluo nuevamente el hold-out. Las credenciales
+se proporcionaron localmente y no forman parte de los recibos publicos.
+
+Estos42 runs nuevos viven en MLflow5002 (36 FINISHED,6 FAILED preservados) y no
+son las396 corridas historicas LOCAL_PARQUET. No hubo DDL/DML, publicacion adicional,
+regeneracion, Kestra/dbt/Spark ni cambio de champion/challenger. La nueva evidencia
+no valida configuraciones de cuentas ajenas ni modifica el PDF definitivo.

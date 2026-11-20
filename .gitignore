@@ -50,3 +50,17 @@ credentials*
 /docs/mlflow_comparacion.jpg
 /docs/mlflow_registry.jpg
 /docs/mlflow_comparacion_procedencia.json
+
+# Salidas NUEVAS: nunca mezclar con las 396 corridas congeladas.
+/estudios/
+
+# Material de revision local, excluido de la entrega academica.
+/docs/estado_rubrica.md
+/docs/propuesta_pdf_complementario.md
+/docs/publicacion_revision.md
+/docs/integracion_publicacion.json
+/docs/defaults_auditoria.json
+/docs/mlflow_auditoria.json
+/docs/revision_offline_resultado.json
+/src/auditoria_mlflow.py
+/docs/defaults_snowflake.md
